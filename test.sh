@@ -2,7 +2,7 @@ echo "Running tests..."
 echo
 
 output=$(./a.out)
-expected_output="Hello, World!"
+expected_output="Toi la sinh vien UET"
 
 if [ $? -eq 0 ] ; then
   echo "Pass: Program exited zero"
