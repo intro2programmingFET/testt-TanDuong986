@@ -6,6 +6,7 @@ if "%1"=="" (
 )
 
 :: Run Git commands
+git pull
 git add .
 git commit -m "%1"
 git push origin master
