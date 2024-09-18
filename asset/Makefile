@@ -4,5 +4,5 @@ a.out:
 clean:
 	rm hello
 
-hola: a.out
+test: a.out
 	bash test.sh
