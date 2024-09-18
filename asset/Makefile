@@ -5,7 +5,7 @@ clean:
 	rm hello
 
 test: a.out
-	bash test.sh
+	bash asset\test.sh
 
 hola: a.out
 	bash asset\case2.sh
