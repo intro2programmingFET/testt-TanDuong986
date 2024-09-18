@@ -21,10 +21,20 @@ jobs:
         setup-command: ''
         command: make test
         timeout: 10
-        max-score: 100
+        max-score: 50
+    - name: case2
+      id: case2
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: case2
+        setup-command: ''
+        command: make hola
+        timeout: 10
+        max-score: 50
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         EX1_RESULTS: "${{steps.ex1.outputs.result}}"
+        CASE2_RESULTS: "${{steps.case2.outputs.result}}"
       with:
-        runners: ex1
+        runners: ex1,case2
