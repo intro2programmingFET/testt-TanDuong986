@@ -5,4 +5,4 @@ clean:
 	rm hello
 
 test: a.out
-	bash .\asset\test.sh
+	bash test.sh
